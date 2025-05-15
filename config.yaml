@@ -1,0 +1,26 @@
+database:
+  # Tipo de banco de dados: "sqlite" ou "postgres"
+  type: "sqlite"
+  # Configurações para PostgreSQL
+  host: "localhost"
+  port: 5432
+  user: "simplemail"
+  password: "simplemail"
+  dbname: "simplemail"
+  # Configuração para SQLite
+  path: "./data/simplemail.db"
+
+smtp:
+  address: "0.0.0.0"
+  port: 25
+  domain: "localhost"
+  allow_insecure: false
+  max_message_bytes: 10485760 # 10MB
+
+imap:
+  address: "0.0.0.0"
+  port: 143
+
+pop3:
+  address: "0.0.0.0"
+  port: 110 
